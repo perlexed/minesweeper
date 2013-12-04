@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/lib/jquery-2.0.3.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/minesweeper/minesweeper.js"></script>
+    <script src="js/minesweeper/minesweeperField.js"></script>
+    <script src="js/main.js"></script>
+    <style type="text/css">
+        .Minesweeper td {
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+            background-color: lightsteelblue;
+        }
+        .Minesweeper .hiddenMine {
+            background-color: pink;
+        }
+        .Minesweeper .Config .FieldSize {
+            width: 30px;
+        }
+        .Minesweeper .probableMine {
+            background-color: palevioletred;
+        }
+        .Minesweeper .mine {
+            background-color: red;
+        }
+        .Minesweeper .opened {
+            background-color: powderblue;
+        }
+    </style>
+    <title>minesweeper</title>
+</head>
+<body>
+<div class="Minesweeper">
+    <div class="Config">
+        <input class="ShowMines" id="ShowMines" type="checkbox"><label for="ShowMines">Show Mines</label>
+        <input class="FieldSize" type="text" id="FieldSize" value="5"/><label for="FieldSize">Field size (5-10)</label>
+    </div>
+    <input type="button" class="NewGame" value="New game" />
+    <div class="Field"></div>
+</div>
+</body>
+</html>
